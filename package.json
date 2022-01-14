@@ -1,6 +1,6 @@
 {
   "name": "@tacxtv/nestjs-module-twurple",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Twurple Nest.JS module",
   "repository": "https://github.com/tacxtv/nestjs-module-twurple.git",
   "author": "Tacx <12997062+tacxticx88@users.noreply.github.com>",
@@ -9,6 +9,7 @@
     "start:dev": "tsc -w",
     "clean": "rimraf dist",
     "build": "tsc",
+    "build:copy": "cpr README.md dist/README.md && cpr LICENSE dist/LICENSE && cpr package.json dist/package.json",
     "release": "release-it"
   },
   "dependencies": {
@@ -19,6 +20,7 @@
     "@nestjs/common": "^8.2.5",
     "@nestjs/core": "^8.2.5",
     "@types/node": "^17.0.8",
+    "cpr": "^3.0.1",
     "eslint": "^8.6.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
