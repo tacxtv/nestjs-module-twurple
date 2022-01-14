@@ -5,8 +5,6 @@
   "repository": "https://github.com/tacxtv/nestjs-module-twurple.git",
   "author": "Tacx <12997062+tacxticx88@users.noreply.github.com>",
   "license": "MIT",
-  "main": "dist",
-  "types": "dist",
   "scripts": {
     "start:dev": "tsc -w",
     "clean": "rimraf dist",
