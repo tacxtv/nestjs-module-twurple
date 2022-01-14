@@ -1,16 +1,24 @@
 {
   "name": "@tacxtv/nestjs-module-twurple",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Twurple Nest.JS module",
   "repository": "https://github.com/tacxtv/nestjs-module-twurple.git",
   "author": "Tacx <12997062+tacxticx88@users.noreply.github.com>",
   "license": "MIT",
+  "main": "dist",
+  "types": "dist",
   "scripts": {
     "start:dev": "tsc -w",
     "clean": "rimraf dist",
     "build": "tsc",
     "build:copy": "cpr README.md dist/README.md && cpr LICENSE dist/LICENSE && cpr package.json dist/package.json",
     "release": "release-it"
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.js"
+    }
   },
   "dependencies": {
     "@twurple/api": "^5.0.13",
@@ -33,5 +41,8 @@
   "peerDependencies": {
     "@nestjs/common": "^6.0.0 || ^7.0.0 || ^8.0.0",
     "@nestjs/core": "^6.0.0 || ^7.0.0 || ^8.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
