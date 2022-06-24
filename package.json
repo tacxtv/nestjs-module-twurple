@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@twurple/api": "^5.0.13",
-    "@twurple/auth": "^5.0.13"
+    "@twurple/auth": "^5.1.6"
   },
   "devDependencies": {
     "@nestjs/common": "^8.2.5",
